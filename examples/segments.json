@@ -1,0 +1,7 @@
+{
+  "segments": [
+    { "segId": 0, "startMs": 0, "endMs": 1000, "levelDb": 60 },
+    { "segId": 1, "startMs": 1000, "endMs": 2000, "levelDb": 70 },
+    { "segId": 2, "startMs": 3000, "endMs": 4000, "levelDb": 65 }
+  ]
+}

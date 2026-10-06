@@ -1,0 +1,23 @@
+{
+  "name": "leq-segment-service",
+  "version": "1.0.0",
+  "description": "离线等效声级分段能量汇总与缺测时长解释后端（TypeScript + Node.js + SQLite）",
+  "type": "module",
+  "bin": {
+    "leq": "dist/cli.js"
+  },
+  "engines": {
+    "node": ">=22.5.0"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "tsc -p tsconfig.test.json && node --disable-warning=ExperimentalWarning --test \"dist-test/test/**/*.test.js\"",
+    "start": "node --disable-warning=ExperimentalWarning dist/server.js",
+    "demo": "node --disable-warning=ExperimentalWarning dist/demo.js",
+    "cli": "node --disable-warning=ExperimentalWarning dist/cli.js"
+  },
+  "devDependencies": {
+    "@types/node": "^25.0.0",
+    "typescript": "^5.7.0"
+  }
+}
