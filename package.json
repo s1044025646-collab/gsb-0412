@@ -1,0 +1,30 @@
+{
+  "name": "offline-leq-service",
+  "version": "1.0.0",
+  "description": "Windows-local offline segmented equivalent sound level aggregation API and CLI",
+  "type": "module",
+  "main": "dist/cli/index.js",
+  "bin": {
+    "leq": "dist/cli/index.js"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "start": "node --experimental-sqlite dist/server.js",
+    "serve": "node --experimental-sqlite dist/cli/index.js serve",
+    "test": "node --experimental-sqlite --test dist/tests/*.test.js",
+    "demo": "node --experimental-sqlite dist/demo.js",
+    "cli": "node --experimental-sqlite dist/cli/index.js"
+  },
+  "keywords": [
+    "leq",
+    "sound-level",
+    "sqlite",
+    "typescript"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^25.0.0",
+    "typescript": "^5.9.0"
+  }
+}
